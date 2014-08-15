@@ -1,0 +1,21 @@
+{
+	"require" : {
+		"slim/slim" : "2.*",
+		"slim/views": "0.1.2",
+		"twig/twig": "v1.15.1",
+		"slim/extras": "2.0.3",
+		"j4mie/idiorm": "v1.4.1",
+		"entomb/slim-json-api": "1.0.6",
+		"components/angular.js": "1.2.0",
+		"components/angular-route": "1.2.0",
+		"components/angular-resource": "1.2.0",
+		"components/bootstrap3": "3.1.1",
+		"angular-ui/bootstrap": "dev-master",
+		"components/font-awesome": "4.0.3",
+		"components/jquery": "2.1.0",
+		"components/modernizr": "2.6.2",
+		"components/normalize.css": "1.*",
+		"components/underscore": "1.5.2",
+		"components/html5-boilerplate": "4.3.0"
+	}
+}

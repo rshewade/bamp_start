@@ -1,0 +1,1053 @@
+[
+    {
+        "name": "slim/slim",
+        "version": "2.4.3",
+        "version_normalized": "2.4.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim.git",
+            "reference": "4906b77a07c7bd6ff1a99aea903e940a2d4fa106"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/codeguy/Slim/zipball/4906b77a07c7bd6ff1a99aea903e940a2d4fa106",
+            "reference": "4906b77a07c7bd6ff1a99aea903e940a2d4fa106",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "suggest": {
+            "ext-mcrypt": "Required for HTTP cookie encryption"
+        },
+        "time": "2014-04-05 18:33:59",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Slim": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Slim Framework, a PHP micro framework",
+        "homepage": "http://github.com/codeguy/Slim",
+        "keywords": [
+            "microframework",
+            "rest",
+            "router"
+        ]
+    },
+    {
+        "name": "slim/views",
+        "version": "0.1.2",
+        "version_normalized": "0.1.2.0",
+        "target-dir": "Slim/Views",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim-Views.git",
+            "reference": "f0a05ea0b654218e40de692ed7cddcad1cf4b828"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/codeguy/Slim-Views/zipball/f0a05ea0b654218e40de692ed7cddcad1cf4b828",
+            "reference": "f0a05ea0b654218e40de692ed7cddcad1cf4b828",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "slim/slim": ">=2.4.0"
+        },
+        "suggest": {
+            "smarty/smarty": "Smarty templating system",
+            "twig/twig": "Twig templating system"
+        },
+        "time": "2014-04-03 16:31:10",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Slim\\Views": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andrew Smith",
+                "email": "a.smith@silentworks.co.uk",
+                "homepage": "http://www.silentworks.co.uk/"
+            },
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Smarty and Twig View Parser package for the Slim Framework",
+        "homepage": "http://github.com/codeguy/Slim-Views",
+        "keywords": [
+            "extensions",
+            "slimphp",
+            "templating"
+        ]
+    },
+    {
+        "name": "twig/twig",
+        "version": "v1.15.1",
+        "version_normalized": "1.15.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fabpot/Twig.git",
+            "reference": "1fb5784662f438d7d96a541e305e28b812e2eeed"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fabpot/Twig/zipball/1fb5784662f438d7d96a541e305e28b812e2eeed",
+            "reference": "1fb5784662f438d7d96a541e305e28b812e2eeed",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "time": "2014-02-13 10:19:29",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.15-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com",
+                "role": "Project Founder"
+            },
+            {
+                "name": "Twig Team",
+                "homepage": "https://github.com/fabpot/Twig/graphs/contributors",
+                "role": "Contributors"
+            }
+        ],
+        "description": "Twig, the flexible, fast, and secure template language for PHP",
+        "homepage": "http://twig.sensiolabs.org",
+        "keywords": [
+            "templating"
+        ]
+    },
+    {
+        "name": "slim/extras",
+        "version": "2.0.3",
+        "version_normalized": "2.0.3.0",
+        "target-dir": "Slim/Extras",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim-Extras.git",
+            "reference": "a022ed23dae94e164000acd891e3394d903f9623"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/codeguy/Slim-Extras/zipball/a022ed23dae94e164000acd891e3394d903f9623",
+            "reference": "a022ed23dae94e164000acd891e3394d903f9623",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "slim/slim": ">=2.0.0"
+        },
+        "time": "2013-01-07 17:56:10",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_Extensions_": "Views/Extension/",
+                "Slim\\Extras": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andrew Smith",
+                "email": "a.smith@silentworks.co.uk",
+                "homepage": "http://www.silentworks.co.uk/"
+            },
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Extras package for the Slim Framework",
+        "homepage": "http://github.com/codeguy/Slim-Extras",
+        "keywords": [
+            "extensions",
+            "middleware",
+            "templating"
+        ]
+    },
+    {
+        "name": "j4mie/idiorm",
+        "version": "v1.4.1",
+        "version_normalized": "1.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/j4mie/idiorm.git",
+            "reference": "11e964157a6a2c6128a0546673ad5e99ac1a62cd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/j4mie/idiorm/zipball/11e964157a6a2c6128a0546673ad5e99ac1a62cd",
+            "reference": "11e964157a6a2c6128a0546673ad5e99ac1a62cd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "time": "2013-12-12 10:25:27",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "idiorm.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-2-Clause",
+            "BSD-3-Clause",
+            "BSD-4-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Simon Holywell",
+                "email": "treffynnon@php.net",
+                "homepage": "http://simonholywell.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Jamie Matthews",
+                "email": "jamie.matthews@gmail.com",
+                "homepage": "http://j4mie.org",
+                "role": "Developer"
+            },
+            {
+                "name": "Durham Hale",
+                "email": "me@durhamhale.com",
+                "homepage": "http://durhamhale.com",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "A lightweight nearly-zero-configuration object-relational mapper and fluent query builder for PHP5",
+        "homepage": "http://j4mie.github.com/idiormandparis",
+        "keywords": [
+            "idiorm",
+            "orm",
+            "query builder"
+        ]
+    },
+    {
+        "name": "entomb/slim-json-api",
+        "version": "1.0.6",
+        "version_normalized": "1.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/entomb/slim-json-api.git",
+            "reference": "821ad303147ff092963a5e3c536d18ca1d176e05"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/entomb/slim-json-api/zipball/821ad303147ff092963a5e3c536d18ca1d176e05",
+            "reference": "821ad303147ff092963a5e3c536d18ca1d176e05",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2014-03-19 15:51:59",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "jsonAPI/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL 3.0"
+        ],
+        "authors": [
+            {
+                "name": "Jonathan Tavares",
+                "email": "the.entomb@gmail.com",
+                "homepage": "https://github.com/entomb",
+                "role": "Developer"
+            }
+        ],
+        "description": "Slim extension to implement fast JSON API's",
+        "homepage": "https://github.com/entomb/slim-json-api",
+        "keywords": [
+            "api",
+            "json",
+            "middleware",
+            "slim",
+            "view"
+        ]
+    },
+    {
+        "name": "components/angular.js",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/angular.js.git",
+            "reference": "ee11cfb1a953d213b78881ee072e367002352b09"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/angular.js/zipball/ee11cfb1a953d213b78881ee072e367002352b09",
+            "reference": "ee11cfb1a953d213b78881ee072e367002352b09",
+            "shasum": ""
+        },
+        "time": "2013-11-12 02:38:20",
+        "type": "component",
+        "extra": {
+            "component": {
+                "name": "angularjs",
+                "scripts": [
+                    "angular.js"
+                ],
+                "files": [
+                    "angular.min.js"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Shim repository for Angular.js",
+        "homepage": "http://angularjs.org"
+    },
+    {
+        "name": "components/angular-route",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/angular-route.git",
+            "reference": "f9868c01fb1f6818cf139a0c2867f7ca97301d5b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/angular-route/zipball/f9868c01fb1f6818cf139a0c2867f7ca97301d5b",
+            "reference": "f9868c01fb1f6818cf139a0c2867f7ca97301d5b",
+            "shasum": ""
+        },
+        "require": {
+            "components/angular.js": "1.2.0"
+        },
+        "time": "2013-11-13 15:10:45",
+        "type": "component",
+        "extra": {
+            "component": {
+                "name": "angular-route",
+                "scripts": [
+                    "angular-route.js"
+                ],
+                "files": [
+                    "angular-route.min.js"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Routing module for AngularJS",
+        "homepage": "http://angularjs.org"
+    },
+    {
+        "name": "components/angular-resource",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/angular-resource.git",
+            "reference": "47edbaab65373277ddc6d6faa9719fc3efa891f3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/angular-resource/zipball/47edbaab65373277ddc6d6faa9719fc3efa891f3",
+            "reference": "47edbaab65373277ddc6d6faa9719fc3efa891f3",
+            "shasum": ""
+        },
+        "require": {
+            "components/angular.js": "1.2.0"
+        },
+        "time": "2013-11-13 16:38:21",
+        "type": "component",
+        "extra": {
+            "component": {
+                "name": "angular-resource",
+                "scripts": [
+                    "angular-resource.js"
+                ],
+                "files": [
+                    "angular-resource.min.js"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Resource module for AngularJS",
+        "homepage": "http://angularjs.org"
+    },
+    {
+        "name": "symfony/process",
+        "version": "v2.5.3",
+        "version_normalized": "2.5.3.0",
+        "target-dir": "Symfony/Component/Process",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Process.git",
+            "reference": "e0997d2a9a1a763484b34b989900b61322a9b056"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/Process/zipball/e0997d2a9a1a763484b34b989900b61322a9b056",
+            "reference": "e0997d2a9a1a763484b34b989900b61322a9b056",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2014-08-05 09:00:40",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Process\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            },
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "Symfony Process Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "kriswallsmith/assetic",
+        "version": "v1.1.2",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kriswallsmith/assetic.git",
+            "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/735cffd3982c6e8cdebe292d5db39d077f65890f",
+            "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1",
+            "symfony/process": "~2.1"
+        },
+        "require-dev": {
+            "cssmin/cssmin": "*",
+            "joliclic/javascript-packer": "*",
+            "kamicane/packager": "*",
+            "leafo/lessphp": "*",
+            "leafo/scssphp": "*",
+            "leafo/scssphp-compass": "*",
+            "mrclay/minify": "*",
+            "phpunit/phpunit": "~3.7",
+            "ptachoire/cssembed": "*",
+            "twig/twig": "~1.6"
+        },
+        "suggest": {
+            "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
+            "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
+            "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+            "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
+            "twig/twig": "Assetic provides the integration with the Twig templating engine"
+        },
+        "time": "2013-07-19 00:03:27",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Assetic": "src/"
+            },
+            "files": [
+                "src/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kris Wallsmith",
+                "email": "kris.wallsmith@gmail.com",
+                "homepage": "http://kriswallsmith.net/"
+            }
+        ],
+        "description": "Asset Management for PHP",
+        "homepage": "https://github.com/kriswallsmith/assetic",
+        "keywords": [
+            "assets",
+            "compression",
+            "minification"
+        ]
+    },
+    {
+        "name": "robloach/component-installer",
+        "version": "0.0.12",
+        "version_normalized": "0.0.12.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/RobLoach/component-installer.git",
+            "reference": "1864f25db21fc173e02a359f646acd596c1b0460"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/1864f25db21fc173e02a359f646acd596c1b0460",
+            "reference": "1864f25db21fc173e02a359f646acd596c1b0460",
+            "shasum": ""
+        },
+        "require": {
+            "kriswallsmith/assetic": "1.*",
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "composer/composer": "1.*"
+        },
+        "time": "2013-08-31 23:46:48",
+        "type": "composer-installer",
+        "extra": {
+            "class": "ComponentInstaller\\Installer"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "ComponentInstaller": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Rob Loach",
+                "email": "robloach@gmail.com",
+                "homepage": "http://robloach.net"
+            }
+        ],
+        "description": "Allows installation of Components via Composer."
+    },
+    {
+        "name": "components/jquery",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/jquery.git",
+            "reference": "099ad075783a6189f13c1e742e03f9cc95654a27"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/jquery/zipball/099ad075783a6189f13c1e742e03f9cc95654a27",
+            "reference": "099ad075783a6189f13c1e742e03f9cc95654a27",
+            "shasum": ""
+        },
+        "require": {
+            "robloach/component-installer": "*"
+        },
+        "time": "2014-01-24 19:52:32",
+        "type": "component",
+        "extra": {
+            "component": {
+                "scripts": [
+                    "jquery.js"
+                ],
+                "files": [
+                    "jquery.min.js",
+                    "jquery.min.map",
+                    "jquery-migrate.js",
+                    "jquery-migrate.min.js"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "John Resig",
+                "email": "jeresig@gmail.com",
+                "homepage": "http://ejohn.org/"
+            }
+        ],
+        "description": "jQuery JavaScript Library",
+        "homepage": "http://jquery.com"
+    },
+    {
+        "name": "components/bootstrap3",
+        "version": "3.1.1",
+        "version_normalized": "3.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/crash21/bootstrap3.git",
+            "reference": "839953cfb830aa27e8fd94404a4a6e02fb38a51a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/crash21/bootstrap3/zipball/839953cfb830aa27e8fd94404a4a6e02fb38a51a",
+            "reference": "839953cfb830aa27e8fd94404a4a6e02fb38a51a",
+            "shasum": ""
+        },
+        "require": {
+            "components/jquery": ">=1.9"
+        },
+        "suggest": {
+            "components/bootstrap-default": "Provide a theme for Bootstrap as components/bootstrap only provides the CSS as file assets"
+        },
+        "time": "2014-02-25 09:50:56",
+        "type": "component",
+        "extra": {
+            "component": {
+                "scripts": [
+                    "js/bootstrap.js"
+                ],
+                "files": [
+                    "js/bootstrap.min.js",
+                    "css/*.css",
+                    "fonts/*",
+                    "less/*"
+                ],
+                "shim": {
+                    "deps": [
+                        "jquery"
+                    ]
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Twitter, Inc"
+            }
+        ],
+        "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+        "homepage": "http://twitter.github.com/bootstrap/",
+        "keywords": [
+            "bootstrap",
+            "css"
+        ]
+    },
+    {
+        "name": "twitter/bootstrap",
+        "version": "v3.2.0",
+        "version_normalized": "3.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/twbs/bootstrap.git",
+            "reference": "c068162161154a4b85110ea1e7dd3d7897ce2b72"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/c068162161154a4b85110ea1e7dd3d7897ce2b72",
+            "reference": "c068162161154a4b85110ea1e7dd3d7897ce2b72",
+            "shasum": ""
+        },
+        "replace": {
+            "twitter/bootstrap": "self.version"
+        },
+        "time": "2014-06-26 16:36:48",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jacob Thornton",
+                "email": "jacobthornton@gmail.com"
+            },
+            {
+                "name": "Mark Otto",
+                "email": "markdotto@gmail.com"
+            }
+        ],
+        "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+        "homepage": "http://getbootstrap.com",
+        "keywords": [
+            "JS",
+            "css",
+            "framework",
+            "front-end",
+            "less",
+            "mobile-first",
+            "responsive",
+            "web"
+        ]
+    },
+    {
+        "name": "angular-ui/bootstrap",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/grisendo/bootstrap.git",
+            "reference": "27b82bbc05d709f161434e36494b065de7103f68"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/grisendo/bootstrap/zipball/27b82bbc05d709f161434e36494b065de7103f68",
+            "reference": "27b82bbc05d709f161434e36494b065de7103f68",
+            "shasum": ""
+        },
+        "require": {
+            "components/angular.js": "*",
+            "components/jquery": "*",
+            "twitter/bootstrap": "*"
+        },
+        "time": "2014-02-25 10:49:07",
+        "type": "component",
+        "extra": {
+            "component": {
+                "scripts": [
+                    "ui-bootstrap.js",
+                    "ui-bootstrap-tpls.js"
+                ],
+                "files": [
+                    "ui-bootstrap.min.js",
+                    "ui-bootstrap-tpls.min.js"
+                ]
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Native AngularJS (Angular) directives for Twitter's Bootstrap",
+        "homepage": "http://angular-ui.github.io/bootstrap/"
+    },
+    {
+        "name": "components/font-awesome",
+        "version": "4.0.3",
+        "version_normalized": "4.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/font-awesome.git",
+            "reference": "1744fe47e16f15749b07d31d40c9ae66b57df307"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/font-awesome/zipball/1744fe47e16f15749b07d31d40c9ae66b57df307",
+            "reference": "1744fe47e16f15749b07d31d40c9ae66b57df307",
+            "shasum": ""
+        },
+        "require": {
+            "robloach/component-installer": "*"
+        },
+        "time": "2013-11-10 21:30:36",
+        "type": "component",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.0.x-dev"
+            },
+            "component": {
+                "styles": [
+                    "css/font-awesome.css"
+                ],
+                "files": [
+                    "css/font-awesome.min.css",
+                    "fonts/*"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT",
+            "OFL-1.1"
+        ],
+        "description": "The iconic font designed for use with Twitter Bootstrap."
+    },
+    {
+        "name": "components/underscore",
+        "version": "1.5.2",
+        "version_normalized": "1.5.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/underscore.git",
+            "reference": "38a139ff4aee2c57413aa4611137563474c45ac7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/underscore/zipball/38a139ff4aee2c57413aa4611137563474c45ac7",
+            "reference": "38a139ff4aee2c57413aa4611137563474c45ac7",
+            "shasum": ""
+        },
+        "require": {
+            "robloach/component-installer": "*"
+        },
+        "time": "2013-10-24 06:09:45",
+        "type": "component",
+        "extra": {
+            "component": {
+                "scripts": [
+                    "underscore.js"
+                ],
+                "files": [
+                    "underscore-min.js"
+                ],
+                "shim": {
+                    "exports": "_"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jeremy Ashkenas",
+                "email": "jeremy@documentcloud.org"
+            }
+        ],
+        "description": "JavaScript's functional programming helper library.",
+        "homepage": "http://underscorejs.org",
+        "keywords": [
+            "browser",
+            "client",
+            "functional",
+            "server",
+            "util"
+        ]
+    },
+    {
+        "name": "components/normalize.css",
+        "version": "1.1.2",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/normalize.css.git",
+            "reference": "979bb1d1710554f8c298544d39d985310c2f5070"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/normalize.css/zipball/979bb1d1710554f8c298544d39d985310c2f5070",
+            "reference": "979bb1d1710554f8c298544d39d985310c2f5070",
+            "shasum": ""
+        },
+        "require": {
+            "robloach/component-installer": "*"
+        },
+        "time": "2013-10-24 03:37:49",
+        "type": "component",
+        "extra": {
+            "component": {
+                "name": "normalize-css",
+                "styles": [
+                    "normalize.css"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards.",
+        "homepage": "http://necolas.github.com/normalize.css/"
+    },
+    {
+        "name": "components/modernizr",
+        "version": "2.6.2",
+        "version_normalized": "2.6.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/modernizr.git",
+            "reference": "c470050f9906b1197ddaa7aace41f73eba5f4ecf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/modernizr/zipball/c470050f9906b1197ddaa7aace41f73eba5f4ecf",
+            "reference": "c470050f9906b1197ddaa7aace41f73eba5f4ecf",
+            "shasum": ""
+        },
+        "require": {
+            "robloach/component-installer": "*"
+        },
+        "time": "2013-03-31 12:34:31",
+        "type": "component",
+        "extra": {
+            "component": {
+                "scripts": [
+                    "modernizr.js"
+                ],
+                "shim": {
+                    "exports": "window.Modernizr"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Modernizr",
+                "homepage": "http://modernizr.com"
+            },
+            {
+                "name": "Faruk Ates"
+            },
+            {
+                "name": "Paul Irish"
+            },
+            {
+                "name": "Alex Sexton"
+            },
+            {
+                "name": "Ryan Seddon"
+            },
+            {
+                "name": "Alexander Farkas"
+            },
+            {
+                "name": "Ben Alman"
+            },
+            {
+                "name": "Stu Cox"
+            }
+        ],
+        "description": "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user's browser.",
+        "homepage": "http://modernizr.com",
+        "keywords": [
+            "CSS3",
+            "HTML5",
+            "browser",
+            "feature detection"
+        ]
+    },
+    {
+        "name": "components/html5-boilerplate",
+        "version": "4.3.0",
+        "version_normalized": "4.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/html5-boilerplate.git",
+            "reference": "5e639ba074a2a9da46d637f27a70097196592ac1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/html5-boilerplate/zipball/5e639ba074a2a9da46d637f27a70097196592ac1",
+            "reference": "5e639ba074a2a9da46d637f27a70097196592ac1",
+            "shasum": ""
+        },
+        "require": {
+            "components/jquery": ">=1.9.1",
+            "components/modernizr": ">=2.6.2",
+            "components/normalize.css": "1.*"
+        },
+        "time": "2013-09-11 04:44:47",
+        "type": "component",
+        "extra": {
+            "component": {
+                "styles": [
+                    "css/main.css"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.",
+        "homepage": "http://html5boilerplate.com",
+        "keywords": [
+            "CSS3",
+            "HTML5"
+        ]
+    }
+]
