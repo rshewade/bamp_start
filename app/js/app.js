@@ -21,6 +21,7 @@ app.run(function($rootScope, $location, loginService){
 		if (routepermission.indexOf($location.path()) !=-1 ){
 			loginService.islogged(function(results){
 				if (results != 'authenfied') {
+					loginService.logout();
 					$location.path('/login');
 				} else {
 					loginService.getuser();

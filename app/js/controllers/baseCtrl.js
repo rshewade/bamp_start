@@ -1,4 +1,5 @@
 'use strict';
+
 app.controller('baseController', function($http, $scope, loginService, userService){
 	$scope.$watch(
 		function(){return userService.getuname();},
@@ -12,20 +13,5 @@ app.controller('baseController', function($http, $scope, loginService, userServi
 		});
 	$scope.logout = function(){
 		loginService.logout();
-	}
-});
-
-app.controller('mainController', function($scope, $http, loginService, sessionService, userService){
-	
-	$scope.logout = function(){
-		loginService.logout();
-	}
-	$scope.test_btn = function(){
-		$scope.Test1 = "Function Called";
-		$scope.username = userService.getuname();
-		$scope.usertype = "test type";
-	}
-	$scope.test_btn2 = function(){
-		console.log(userService.getuname().length)
 	}
 });

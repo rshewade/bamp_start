@@ -9,8 +9,8 @@ app.factory('sessionService', ['$http', function($http){
 			return sessionStorage.getItem(key);	
 		},
 		destroy:function(key){
-			$http.post('app/data/destroy_session.php');
-			// $http.post('app/data/user.php/sesdestroy');
+			// $http.post('app/data/destroy_session.php');
+			$http.post('app/data/user.php/sesdestroy');
 			return sessionStorage.removeItem(key);
 		}
 	};
