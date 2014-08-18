@@ -17,15 +17,23 @@
   <link rel="stylesheet" href="components/bootstrap3/css/bootstrap.min.css"  media="screen" />
   <!-- js -->
     <script src="app/js/app.js"></script>
+    <!-- controllers -->
     <script src="app/js/controllers/MainCtrl.js"></script>
+    <script src="app/js/controllers/LoginCtrl.js"></script>
     <script src="app/js/controllers/UserCtrl.js"></script>
+    <!-- directives -->
+    <script src="app/js/directives/loginDirective.js"></script>
+    <!-- services -->
+    <script type="text/javascript" src="app/js/services/loginService.js"></script>
+    <script type="text/javascript" src="app/js/services/sessionService.js"></script>
+    <script type="text/javascript" src="app/js/services/userService.js"></script>
   <!-- Customized styles -->
 
   <!-- Customized js -->
   <!-- <link rel="stylesheet" href="app/css/bootstrap-responsive.min.css" /> -->
 
 </head>
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="baseController">
  <!-- Navigation -->
 <nav class="navbar navbar-default" role="navigation" style="background-color:white; border:none;">
   <div class="container-fluid">
@@ -38,7 +46,7 @@
         <span class="icon-bar"></span>
       </button>
       <div class="navbar-brand" href="#">
-        Employee Portal
+        Your Portal
       </div>
     </div>
 
@@ -47,10 +55,10 @@
       <ul class="nav navbar-nav navbar-right" >
         <li><a class="" href="#"> Home</a></li>
         <li><a class="" href="#/contact"> Contact</a></li>
-        <li><a class="" href="#/hmrc"> Pay HMRC Online</a></li>
-        <li><a class="" href="#/login" ng-show = "Site.mode() == 'Public' "> Log In</a></li>
-        <li class="dropdown" ng-show = "Site.mode() == 'User' ">
-          <a class="" data-toggle="dropdown"> User Menu <b class="caret"></b></a>
+        <li><a class="" href="#/about"> About</a></li>
+        <li><a class="" href="#/login" ng-hide = "username.length>0"> Log In</a></li>
+        <li class="dropdown" ng-show = "username.length>0">
+          <a class="" data-toggle="dropdown"> {{ username }} <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#/users">User Management</a></li>
             <li><a href="#/approve">Check and Approve</a></li>
@@ -58,7 +66,7 @@
             <li><a href="#/report">Report</a></li>
             <li class="divider"></li>
             <li><a href="#/cngpass">Change Password</a></li>
-            <li><a href="#">Log Out</a></li>
+            <li><a href="#" ng-click="logout()">Log Out</a></li>
           </ul>
         </li>
       </ul>
@@ -67,7 +75,9 @@
   </div><!-- /.container-fluid -->
 </nav>
     <div class="container">
-        {{ 1+1 }}
+        <!-- {{ 1+1 }} -->
+         {{ username }} <br>
+        {{ usertype }} <br>
         <div ng-view></div>      
     </div>
   

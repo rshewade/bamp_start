@@ -1,11 +1,31 @@
-var app = angular.module("myApp",['ngRoute','MainCtrl']);
+var app = angular.module("myApp",['ngRoute']);
 app.config(['$routeProvider','$locationProvider',function($routeProvider, $locationProvider) {
 	$routeProvider
-		.when('/',{
+		.when('/home',{
 			// This will show the data get
 			templateUrl	: 'app/partials/main.html',
 			controller 	: 'mainController'
 		})
-		.otherwise({ redirectTo : '/'});
+		.when('/login',{
+			// This will show the data get
+			templateUrl	: 'app/partials/login.html',
+			controller 	: 'loginController'
+		})
+		.otherwise({ redirectTo : '/login'});
 	// $locationProvider.html5Mode(true);	
 }]);
+
+app.run(function($rootScope, $location, loginService){
+	var routepermission = ['/home'];
+	$rootScope.$on('$routeChangeStart', function(){
+		if (routepermission.indexOf($location.path()) !=-1 ){
+			loginService.islogged(function(results){
+				if (results != 'authenfied') {
+					$location.path('/login');
+				} else {
+					loginService.getuser();
+				}
+			});
+		}
+	});
+});
