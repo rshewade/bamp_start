@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/grisendo/bootstrap.git",
-                "reference": "27b82bbc05d709f161434e36494b065de7103f68"
+                "reference": "77174b69f0bf7286f3e0bf1887b65ec0f61c20da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/grisendo/bootstrap/zipball/27b82bbc05d709f161434e36494b065de7103f68",
-                "reference": "27b82bbc05d709f161434e36494b065de7103f68",
+                "url": "https://api.github.com/repos/grisendo/bootstrap/zipball/77174b69f0bf7286f3e0bf1887b65ec0f61c20da",
+                "reference": "77174b69f0bf7286f3e0bf1887b65ec0f61c20da",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
             ],
             "description": "Native AngularJS (Angular) directives for Twitter's Bootstrap",
             "homepage": "http://angular-ui.github.io/bootstrap/",
-            "time": "2014-02-25 10:49:07"
+            "time": "2014-08-22 11:32:43"
         },
         {
             "name": "components/angular-resource",

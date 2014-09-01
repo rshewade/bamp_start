@@ -13,12 +13,13 @@
     <script src="components/bootstrap3/js/bootstrap.min.js"></script>
     <script src="components/angularjs/angular.min.js"></script>
     <script src="components/angular-route/angular-route.min.js"></script>
+    <script src="components/angular-ui-router/angular-ui-router.min.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="components/bootstrap3/css/bootstrap.min.css"  media="screen" />
   <!-- js -->
     <script src="app/js/app.js"></script>
     <!-- controllers -->
-    <!-- <script src="app/js/controllers/baseCtrl.js"></script> -->
+    <script src="app/js/controllers/baseCtrl.js"></script>
     <script src="app/js/controllers/MainCtrl.js"></script>
     <script src="app/js/controllers/LoginCtrl.js"></script>
     <script src="app/js/controllers/UserCtrl.js"></script>
@@ -57,9 +58,18 @@
         <li><a class="" href="#"> Home</a></li>
         <li><a class="" href="#/contact"> Contact</a></li>
         <li><a class="" href="#/about"> About</a></li>
-        <li><a class="" href="#/login" ng-hide = "username.length>0"> Log In</a></li>
-        <li class="dropdown" ng-show = "username.length>0">
-          <a class="" data-toggle="dropdown"> {{ username }} <b class="caret"></b></a>
+        <li class="dropdown">
+          <a class="" data-toggle="dropdown"> Test Links <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/admin" ng-show = "display('Admin')">Admin</a></li>
+            <li><a href="#/client1" ng-show = "display('Client')">Client 1</a></li>
+            <li><a href="#/client2" ng-show = "display('EndClient')">Client 2</a></li>
+          </ul>
+        </li>
+        <li><a class="" href="#/login" ng-hide = "user.name.length>0"> Log In</a></li>
+        <li class="dropdown" ng-show = "user.name.length>0">
+          <a class="" data-toggle="dropdown"> {{ user.name }} <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#/users">User Management</a></li>
             <li><a href="#/approve">Check and Approve</a></li>
@@ -77,9 +87,9 @@
 </nav>
     <div class="container">
         <!-- {{ 1+1 }} -->
-         {{ username }} <br>
-        {{ usertype }} <br>
-        <div ng-view></div>      
+         {{ user.name }} <br>
+        {{ user.type }} <br>
+        <div ui-view></div>      
     </div>
   
 

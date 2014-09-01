@@ -32,6 +32,7 @@ function login(){
 }
 
 function getuser(){
+	// send details of users if logged in
 	$headers = getallheaders();
 	$en_auth = $headers['Auth'];
 	$auth = decrypt($en_auth,'R#235689');
@@ -53,30 +54,37 @@ function users(){
 }
 
 function ses_destroy(){
+	try {
 	session_id('uid');
 	session_destroy();
 	session_commit();
+	} catch (Exception $e){
+
+	}
 }
 
 function ses_check(){
-	// $token = json_decode(file_get_contents("php://input"));
 	$headers = getallheaders();
-	$en_auth = $headers['Auth'];
-	$diff_time = time() - $_SESSION['ltime'];
-	if( isset($_SESSION['uid']) ){
-		if ($en_auth == $_SESSION['uid']) {
-			if ($diff_time < 600){
-				echo "authenfied" ;
-				$_SESSION['ltime'] = time();
+	try {
+		$en_auth = $headers['Auth'];
+		$diff_time = time() - $_SESSION['ltime'];
+		if( isset($_SESSION['uid']) ){
+			if ($en_auth == $_SESSION['uid']) {
+				if ($diff_time < 600){
+					echo "authenfied" ;
+					$_SESSION['ltime'] = time();
+				} else {
+					echo "timeout" ;	
+				}
+				// echo "authenfied" ;	
 			} else {
-				echo "timeout" ;	
-			}
-			// echo "authenfied" ;	
+				echo "unmatched" ;
+			} 
 		} else {
-			echo "unmatched" ;
-		} 
-	} else {
-		echo "no token" ;
+			echo "no token" ;
+		}	
+	} catch (Exception $e) {
+		echo $e->getMessage();
 	}
 }
 

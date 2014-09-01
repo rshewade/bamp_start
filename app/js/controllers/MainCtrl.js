@@ -1,19 +1,14 @@
 'use strict';
-app.controller('baseController', function($http, $scope, loginService, userService){
-	$scope.$watch(
-		function(){return userService.getuname();},
-		function(newval){
-			$scope.username = newval;
-		});
-	$scope.$watch(
-		function(){return userService.getutype();},
-		function(newval){
-			$scope.usertype = newval;
-		});
-	$scope.logout = function(){
-		loginService.logout();
-	}
-});
+// app.controller('baseController', function($http, $scope, loginService, userService){
+// 	$scope.$watch(
+// 		function(){return userService.getuser();},
+// 		function(newval){
+// 			$scope.user = newval;},
+// 		true);
+// 	$scope.logout = function(){
+// 		loginService.logout();
+// 	}
+// });
 
 app.controller('mainController', function($scope, $http, loginService, sessionService, userService){
 	
@@ -21,11 +16,9 @@ app.controller('mainController', function($scope, $http, loginService, sessionSe
 		loginService.logout();
 	}
 	$scope.test_btn = function(){
-		$scope.Test1 = "Function Called";
-		$scope.username = userService.getuname();
-		$scope.usertype = "test type";
+
 	}
 	$scope.test_btn2 = function(){
-		console.log(userService.getuname().length)
+		
 	}
 });
