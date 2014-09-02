@@ -4,9 +4,9 @@ require_once '../../vendor/j4mie/idiorm/idiorm.php';
 \Slim\Slim::registerAutoloader();
 //Create ORM Object to access database
     ORM::configure(array(
-        'connection_string' => 'mysql:host=localhost;dbname=mrtax',
+        'connection_string' => 'mysql:host=localhost;dbname=data',
         'username' => 'root',
-        'password' => 'raj'));
+        'password' => 'R#235689'));
     ORM::configure('return_result_sets', true);
     ORM::configure('id_column','Auto_id');
 function encrypt($decrypted, $str, $salt='!kQm*fF3pXe1Kbm%9') { 

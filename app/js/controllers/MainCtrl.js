@@ -16,7 +16,9 @@ app.controller('mainController', function($scope, $http, loginService, sessionSe
 		loginService.logout();
 	}
 	$scope.test_btn = function(){
-
+		$http.post('app/data/report.php/test').success(function(data){
+        $scope.Test1 = data;
+    	});
 	}
 	$scope.test_btn2 = function(){
 		

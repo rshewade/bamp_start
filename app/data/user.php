@@ -4,6 +4,8 @@ require 'start.php';
 // require 'jwt_helper.php';
 
 $app->get('/',function () {
+    $users = ORM::for_table('user_db')->find_array();
+    echo json_encode($users);
         echo "Only Test";
     }
 );
@@ -34,11 +36,12 @@ function login(){
 function getuser(){
 	// send details of users if logged in
 	$headers = getallheaders();
-	$en_auth = $headers['Auth'];
+	$en_auth = $headers['auth'];
 	$auth = decrypt($en_auth,'R#235689');
 	$auth_arr = explode('_', $auth);
 	$user = ORM::for_table('user_db')->where('Auto_id', $auth_arr[0] )->find_one();
-	$result = array($user->User_name, $user->Type);
+    $access = ORM::for_table('access_db')->select('name')->select('route')->where('role', $user->Type)->find_array();
+	$result = array($user->User_name, $user->Type, $access);
 	echo json_encode($result);
 }
 
@@ -66,7 +69,7 @@ function ses_destroy(){
 function ses_check(){
 	$headers = getallheaders();
 	try {
-		$en_auth = $headers['Auth'];
+		$en_auth = $headers['auth'];
 		$diff_time = time() - $_SESSION['ltime'];
 		if( isset($_SESSION['uid']) ){
 			if ($en_auth == $_SESSION['uid']) {

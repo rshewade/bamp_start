@@ -17,6 +17,7 @@ app.factory('loginService', function($http, $location, sessionService, userServi
 						$http.post('app/data/user.php/user').success(function(name){
 							user.name = name[0];
 							user.type = name[1];
+                            user.routes = name[2];
 							userService.setuser(user);
 							$location.path('/home');
 						});
