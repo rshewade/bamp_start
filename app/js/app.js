@@ -1,7 +1,7 @@
 var app = angular.module("myApp",['ui.router']);
 
-app.config(function($stateProvider, $urlRouterProvider){
-	$urlRouterProvider.otherwise("/login");
+app.config(function($stateProvider, $urlRouterProvider, $httpProvider){
+    $urlRouterProvider.otherwise("/login");
 	$stateProvider
 		.state('login',{
 			url:"/login",
@@ -42,7 +42,9 @@ app.config(function($stateProvider, $urlRouterProvider){
         	controller 	: 'clientstaffController'
 		})
 });
-
+app.config(function($httpProvider){
+   $httpProvider.interceptors.push('HttpResponseInterceptor'); 
+});
 app.run(function($rootScope, $state, loginService, userService){
 	$rootScope.$on("$stateChangeStart", function(event, toState, toParams, fromState, fromParams){
 		loginService.islogged(function(results){

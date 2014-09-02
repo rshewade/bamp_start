@@ -2,12 +2,7 @@
 
 app.controller('adminController', function($scope, $http, $state){
 	$http.post('app/data/report.php/admin').success(function(data){
-        if (data != 'Unauthorized!'){
         	$scope.users = data;    
-        } else {
-            $state.go('401');
-        }
-        
     });
 });
 
