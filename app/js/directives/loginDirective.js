@@ -5,3 +5,9 @@ app.directive('loginDirective',function(){
 		templateUrl	: 'app/partials/tpl/login.tpl.html'
 	}
 });
+
+app.directive('userlistDirective', function(){
+   return{
+       templateUrl : 'app/partials/tpl/userlist.tpl.html'
+   } 
+});

@@ -1,29 +1,4 @@
 <h1>Client 2 Page</h1>
-<div class="row">
-    <table class="table">
-        <thead>
-            <tr style="background-color:darkgray;">
-				<td>First Name</td>
-				<td>Last Name</td>
-				<td>Client Ref</td>
-				<td>Client Name</td>
-				<td>Email</td>
-				<td>Type</td>
-				<td>Verified On</td>
-				<td>Status</td>
-			</tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="row in users">
-                <td>{{ row.First_nm }}</td>
-                <td>{{ row.Last_nm }}</td>
-                <td>{{ row.Cl_ref }}</td>
-                <td>{{ row.User_name }}</td>
-                <td>{{ row.User_id }}</td>
-                <td>{{ row.Type }}</td>
-                <td>{{ row.Verified_ON }}</td>
-                <td>{{ row.Status }}</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="row" userlist-directive>
+    
 </div>
